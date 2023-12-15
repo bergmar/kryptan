@@ -24,3 +24,12 @@ export const formatUSD = (value) => {
 
     return formatter.format(value);
 }
+
+export const formatSEK = (value) => {
+    let formatter = new Intl.NumberFormat('sv-SE', {
+        style: 'currency',
+        currency: 'SEK',
+    });
+
+    return formatter.format(value);
+}
